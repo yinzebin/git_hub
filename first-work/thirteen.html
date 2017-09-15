@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/demo.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<script src="iconfont/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/thirteen.css" />
+	</head>
+
+	<style type="text/css">
+		::-webkit-input-placeholder {
+			/* WebKit browsers */
+			color: #CACACA;
+			font-size: 1.75rem;
+		}
+		
+		:-moz-placeholder {
+			/* Mozilla Firefox 4 to 18 */
+			color: #CACACA;
+			font-size: 1.75rem;
+		}
+		
+		::-moz-placeholder {
+			/* Mozilla Firefox 19+ */
+			color: #CACACA;
+			font-size: 1.75rem;
+		}
+		
+		:-ms-input-placeholder {
+			/* Internet Explorer 10+ */
+			color: #CACACA;
+			font-size: 1.75rem;
+		}
+		
+		select {
+			/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+			border: solid 1px #000;
+			/*很关键：将默认的select选择框样式清除*/
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			/*在选择框的最右侧中间显示小箭头图片*/
+			/*background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;*/
+			/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+			/*padding-right: 14px;*/
+			color: #cacaca;
+			font-size: 1.75rem;
+            padding-left: 1.125rem;
+            background: white;
+		}
+		
+		select option{
+			width: 100%;
+		}
+
+		/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+		select::-ms-expand {
+			display: none;
+		}
+	</style>
+
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = innerWidth / 46.875 + "px"
+		onresize = function() {
+			document.documentElement.style.fontSize = innerWidth / 46.875 + "px"
+		}
+	</script>
+
+	<body>
+		<header>
+			<img class="img" src="img/logo.png" />
+			<p class="mid">装修报价</p>
+			<div class="logo">
+				<div class="one">
+					<p class="iconfont icon-user"></p>
+					<p>我的</p>
+				</div>
+				<div class="two">
+					<p class="iconfont icon-nav"></p>
+					<p>导航</p>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="banner">
+				<img src="img/10quoted.jpg" />
+			</div>
+			<div class="baojia">
+				<h1>房先森10S报价</h1>
+				<ul class="decorate">
+					<li>
+						<p></p>
+					</li>
+					<li><img src="img/icon_title.png" /></li>
+					<li>
+						<p></p>
+					</li>
+				</ul>
+				<div class="int">
+					<input type="text" placeholder="请填写建筑面积" />
+					<!--select-->
+					<div class="sel1">
+						<select name="">
+							<option value="">现代</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+					</div>
+					<!--select-->
+					<div class="sel2">
+						<select name="">
+							<option value="">一室</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+						<select name="">
+							<option value="">一厅</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+					</div>
+					<!--select-->
+					<div class="sel3">
+						<select name="">
+							<option value="">一厨</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+						<select name="">
+							<option value="">一卫</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+						<select name="">
+							<option value="">一阳台</option>
+							<option value="">dasds</option>
+							<option value="">dasds</option>
+						</select>
+					</div>
+					<button class="now">立即申请</button>
+				</div>
+				<div class="pricemeans">
+					<h1 class="float">装修报价</h1>
+					<p>全包装修总价：<span>81,889,78</span>元</p>
+					<p>您还可以选择</p>
+					<p>房先森装修半包套餐价，<span>399</span>元/平米</p>
+					<p>预约399套餐</p>
+				</div>
+			</div>
+			<div class="tigong">
+				<h1>我们可以为您提供</h1>
+				<ul class="decorate">
+					<li>
+						<p></p>
+					</li>
+					<li><img src="img/icon_title.png" /></li>
+					<li>
+						<p></p>
+					</li>
+				</ul>
+				<ol class="list">
+					<li>
+						<p class="iconfont icon-app"></p>
+						<p>产品系列</p>
+						<p>半包、全包套餐、全屋定制及个性化升级</p>
+					</li>
+					<li>
+						<p class="iconfont icon-price"></p>
+						<p>0元装修</p>
+						<p>与建行合作装修贷款，实现0元开启装修</p>
+					</li>
+					<li>
+						<p class="iconfont icon-live"></p>
+						<p>工地直播</p>
+						<p>工地巡检照片、360度全景节点验收</p>
+					</li>
+				</ol>
+				<ol class="list">
+					<li>
+						<p class="iconfont icon-preferential"></p>
+						<p>产品系列</p>
+						<p>半包、全包套餐、全屋定制及个性化升级</p>
+					</li>
+					<li>
+						<p class="iconfont icon-construction-site"></p>
+						<p>0元装修</p>
+						<p>与建行合作装修贷款，实现0元开启装修</p>
+					</li>
+					<li>
+						<p class="iconfont icon-protection"></p>
+						<p>工地直播</p>
+						<p>工地巡检照片、360度全景节点验收</p>
+					</li>
+				</ol>
+			</div>
+			<div class="content1">
+				<p>
+					房先森互联网家装有别于传统公司与其他装修中介平台，以自营模式整合设计师与项目经理，杜绝项目转外包，利用 互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
+				</p>
+			</div>
+			<!---->
+			<div class="mb">
+				<img src="img/icon_close.png" class="img1" />
+				<img src="img/quoten_bottom.png" class="img2" />
+				<button>免费获取金币</button>
+			</div>
+		</section>
+		<!---->
+		<footer>
+			<div>
+				<span class="iconfont icon-hot-line"></span>
+				<span> &nbsp;服务热线：400-9977-658</span>
+			</div>
+			<ul>
+				<li>触屏版</li>
+				<li>电脑版</li>
+				<li>关于我们</li>
+				<li>联系我们</li>
+			</ul>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(".img1").click(function() {
+			$(".mb").css("display", "none")
+		})
+	</script>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/demo.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<script src="iconfont/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/sixteen.css" />
+	</head>
+
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = innerWidth / 46.875 + "px"
+		onresize = function() {
+			document.documentElement.style.fontSize = innerWidth / 46.875 + "px"
+		}
+	</script>
+
+	<body>
+		<header>
+			<img class="img" src="img/logo.png" />
+			<p class="mid">业主评价</p>
+			<div></div>
+			<div class="two">
+				<p class="iconfont icon-nav"></p>
+				<p>导航</p>
+			</div>
+		</header>
+		<section>
+			<ul class="list">
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">这篇文章很实用，刚好在装修，刚好可以用来参考一下。</p>
+				</li>
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">喜欢这篇文章很实用。</p>
+				</li>
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">设计师为人随和，很喜欢他。画图也很仔细，暂时就这些。</p>
+				</li>
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">设计风格简约大气，人很热情，沟通很耐心，极力推荐。</p>
+				</li>
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">空间利用合理，设计风格很喜欢。</p>
+				</li>
+				<li>
+					<div class="top">
+						<div class="lef">
+							<p class="iconfont icon-user"></p>
+							<p class="mean">x*h</p>
+						</div>
+						<p class="times">2016-05-19</p>
+					</div>
+					<p class="con">设计师为人随和，很喜欢他。画图也很仔细，暂时就这些。</p>
+				</li>
+			</ul>
+			<div class="btn">
+				<button>上一页</button>
+				<p>2/30</p>
+				<button>下一页</button>
+			</div>
+			<div class="content1">
+				<p class="con">
+					房先森互联网家装有别于传统公司与其他装修中介平台，以自营模式整合设计师与项目经理，杜绝项目转外包，利用 互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
+				</p>
+				<p data-toggle="modal" data-target="#layer" class="pingjia iconfont icon-pencle"></p>
+			</div>
+			<!---->
+			<div class="mb">
+				<img src="img/icon_close.png" class="img1" />
+				<img src="img/quoten_bottom.png" class="img2" />
+				<button>免费获取金币</button>
+			</div>
+		</section>
+		<!--模态框开始-->
+		<div role="dialog" class="modal fade bs-example-modal-sm" id="layer">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="top">
+							<p data-dismiss="modal" class="cancel">取消</p>
+							<h1>写评论</h1>
+							<p data-dismiss="modal" class="confirm">确认</p>
+						</div>
+						<textarea class="textarea" cols="5" rows="10">
+							
+						</textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框结束-->
+		<!--footer-->
+		<footer>
+			<div>
+				<span class="iconfont icon-hot-line"></span>
+				<span> &nbsp;服务热线：400-9977-658</span>
+			</div>
+			<ul>
+				<li>触屏版</li>
+				<li>电脑版</li>
+				<li>关于我们</li>
+				<li>联系我们</li>
+			</ul>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(".img1").click(function() {
+			$(".mb").css("display", "none")
+		})
+	</script>
+
+</html>
